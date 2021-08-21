@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac-Book-Pro</title>
+    <!-- Bootstrap Css Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <section class="container mt-5">
+            <div class="row">
+                <div class="col-lg-5">
+                    <img class="w-100" src="images/mac.png" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <div>
+                        <h1>Coustomize Your Blue 24 Inch IMac with Apple M1 Chip.</h1>
+                        <p>Apple's M1 Chip Explained The M1 is the first Apple-designed System on a Chip (SoC) that's been developed for use in Macs. It marks Apple's transition away from the Intel chips that the Cupertino company has been using in Macs since 2006.</p>
+                    </div>
+                    <div class="mt-5">
+                        <h5>Memory</h5>
+                        <button  onclick="handleCost('memory-cost','0')">8GB unified memory</button>
+                        <button onclick="handleCost('memory-cost','100')">16GB unified memory</button>
+                    </div>
+                    <div class="mt-5">
+                        <h5>Storage</h5>
+                        <button  onclick="handleCost('storage-cost','0')">256GB SSD storage</button>
+                        <button  onclick="handleCost('storage-cost','180')">512GB SSD storage</button>
+                        <button  onclick="handleCost('storage-cost','300')">1TB SSD storage</button>
+                    </div>
+                    <div class="mt-5">
+                        <h5>Choose your delivery option</h5>
+                        <button onclick="handleCost('delivary-cost','0')">Friday,August 25 FREE Prime delivery</button>
+                        <button  onclick="handleCost('delivary-cost','20')">Saturday,August 21 Delivery charge $20</button>
+                    </div>
+                    <div class="mt-5">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="row">Best Price</th>
+                                    <td>$ <span id="current-price">1299</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Extra memory cost</th>
+                                    <td>$<span id="memory-cost">0</span> </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Extra Storage cost</th>
+                                    <td>$<span id="storage-cost">0</span> </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Delivery charge</th>
+                                    <td>$<span id="delivary-cost">0</span></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="col">Total Price</th>
+                                    <th scope="col">$<span id="total-cost">1299</span> </th>
+                                </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                    <div class="mt-5">
+                        <H6>Add Promo Code</H6>
+                        <input type="text" id="discount">
+                        <button onclick="handleDiscount()">Apply</button>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <h1>Total: $<span id="footer-price">1299</span> </h1>
+                </div>
+            </div>
+        </section>
+    </header>
+    <script src="macbook.js"></script>
+</body>
+</html>
