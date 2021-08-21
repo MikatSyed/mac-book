@@ -31,7 +31,9 @@ function handleCost (id,price){
      const inputValue = document.getElementById('discount').value;
     if(inputValue.includes('abc')){
       const discount = document.getElementById('footer-price').innerText;
-      const discountAmount = parseInt(discount / 20);
+      
+      const discountAmount = parseInt(discount * 0.2);
+      console.log(discountAmount)
       const newDiscountAmount = discount - discountAmount;
       document.getElementById('footer-price').innerHTML = newDiscountAmount;
       document.getElementById('discount').value = '';
