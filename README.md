@@ -1,2 +1,2 @@
 # mac-book
-Click Here To See The Live : https://mikatsyed.github.io/mac-book/index.html
+Click Here To See The Live : https://mikatsyed.github.io/mac-book/
